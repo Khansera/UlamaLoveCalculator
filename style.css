@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+header ,footer, main{
+ display: none;
+}
+.content-visible{
+  display: block;
+}
+/* ******************************************Border Animation***************************************************/
+  svg {
+    font-family: 'Russo One', sans-serif;
+  }
+svg text {
+    text-transform: uppercase;
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: wheat;
+    font-size: 90px;
+  }
+  @keyframes stroke {
+    0%   {
+      fill: rgba(72,138,20,0); stroke: white;
+      stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+    }
+    30%  {fill: rgba(72,138,20,0); stroke: white; }
+    40%  {fill: rgba(72,138,20,0); stroke: white; stroke-width: 3; }
+    100% {
+      fill: white; stroke: rgba(54,95,160,0); 
+      stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
+  }
+  select,input:focus{
+  box-shadow: none!important;
+  }
+  
+  /*********************** Volume Alert*************** */
+  #popup {
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  
+  #popup-content {
+    transform: translate(-50%, -50%);
+  }
+  
+  #popup h2 {
+    font-size: 24px;
+  }
+  #popup p {
+    font-size: 18px;
+  }
+  /************************************************** Result custom css *******************************/
+  .result-custom-css{
+    top: 15%;
+    bottom: 10%;
+  }
+  @media screen and (max-height:680px) {
+    .result-custom-css{
+      top: 2%;
+      bottom: 2%;
+    }
+  }
+  #Result{
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  
