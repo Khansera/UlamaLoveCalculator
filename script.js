@@ -86,13 +86,6 @@ checkButton.addEventListener('click',()=>{
       }
       testname(spin)
       setTimeout(()=>{
-           //........Opening & Closing of result...................//
-        const closeButton=$(".remove");
-        const result=$("#Result")
-        result.fadeIn()     
-        closeButton.click(function(){
-          result.fadeOut()
-        });
        //....Adding head to the result..........//
         document.querySelector(".head-title").innerHTML="Hi, " +person_name;
         //.......calling the pargraph of result...//
@@ -125,6 +118,13 @@ checkButton.addEventListener('click',()=>{
           audio.play();
           heartAnimation.addClass("d-none")
         }
+        //........Opening & Closing of result...................//
+        const closeButton=$(".remove");
+        const result=$("#Result")
+        result.fadeIn()     
+        closeButton.click(function(){
+        result.fadeOut()
+        });
       },time)
      }
    CalculateLove()
